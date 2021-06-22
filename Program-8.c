@@ -1,25 +1,34 @@
-//INPUT- 4 10 20 20 30 20
-//OUTPUT - The number of times the  key element  is repeated  is 2
-#include<stdio.h>
-int main(){
-  int n,flag=0,i,key,a[10],c=0;
-  printf("Enter size of the array,  array elemnts and the key\n");
-  scanf("%d",&n);
-  //printf("Enter array elements");
-  for(i=0;i<n;i++)//missing code
-  scanf("%d",&a[i]);//missing code
-  //printf("Enter an integer value : ");
-  scanf("%d",&key);
+//linear search 
+//INPUT- 4 1 2 3 4 3
+//OUTPUT - 3
+
+
+#include <stdio.h>
+int main()
+{
+  int array[100], search, c, n;
+
+  printf("Enter number of elements in the array, array elements and the key\n");
+  scanf("%d", &n);
+
   
-    for(i=0;i<n;i++){
-  if(key==a[i]) //missing code
+  for (c = 0; c < n; c++)
+    scanf("%d", &array[c]);
+
+ 
+  scanf("%d", &search);
+
+  for (c = 0; c < n; c++)
   {
-    //flag=1;
-    c++;
-  }
+    if (array[c] == search)    /* If required element is found */
+    {
+      //printf("%d is present at location %d", search, c+1);
+      printf("%d",c+1);
+      break;
     }
-   printf("The number of times the  key element  is repeated  is %d",c);//missing code
-  
-    
-    return(0);
+  }
+  if (c == n)
+    printf("%d is not present in the array", search );
+
+  return 0;
 }
