@@ -1,25 +1,24 @@
-//INPUT - 4 1 2 3 4
-//OUTPUT - Sum of elements=10
-
+//Program to sum odd numbers from 1 to 10
+//INPUT- 10
+//OUTPUT-25
 
 #include <stdio.h>
- 
-#include <stdio.h>
- 
-int main()
+int main ()
 {
-   int a[10],i,sum=0,n;
-   printf("Enter number of elements in array and the array elements\n");
-   scanf("%d", &n);
+ int sum = 0,i,n;
  
-  // printf("Enter %d elements\n", n);
- 
-   for (i = 0; i < n; i++)
-   {
-      scanf("%d", &a[i]);
-      sum=sum+a[i]; 
-   }
- printf("Sum of elements=%d", sum );
- 
-  return 0;
+//Fill the missing code
+ printf("Enter n value\n");
+ scanf("%d", &n);
+ //Fill the missing code
+for(i=1;i<=n;i++)
+ {
+   
+   if ( i % 2 == 0 )
+      continue;
+  sum = sum + i;
+  }
+//Fill the missing code
+printf("%d",sum);
+ return 0;
 }
