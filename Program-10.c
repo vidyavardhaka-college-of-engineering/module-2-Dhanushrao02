@@ -1,4 +1,3 @@
-  
 //INPUT - 4 30 20 10 60
 //OUTPUT: The largest and smallest elements are 60 and 10
 
