@@ -4,7 +4,7 @@
 
 
 #include<stdio.h>
-int main()
+void main()
 {
 	int i=1,n;
 	printf("Enter upper limit : ");
@@ -12,5 +12,5 @@ int main()
 	printf("The natural numbers are ");
 	for(i=1;i<=n;i++)
 		printf("%d ",i);
-   return 0;//Fill the missing code here
+	//Fill the missing code here
  }
